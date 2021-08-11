@@ -1,0 +1,9 @@
+package com.folderexplorer;
+
+public class DeleteFile 
+{
+	public static boolean deleteFile(String folderpath, String fileName)
+	{
+		File fl = new File(folderpath+"\\"+fileName)
+	}
+}

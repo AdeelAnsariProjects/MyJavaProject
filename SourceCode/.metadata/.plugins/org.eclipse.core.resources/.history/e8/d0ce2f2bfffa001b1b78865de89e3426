@@ -13,10 +13,8 @@ public class FolderExplorer
 		String fileName;
 		Scanner obj = new Scanner(System.in);
 
-		//Showing user a list files that currently exists in the given folder
+		//Showing user a list files that exist in the given folder
 		List<String> fileNames = RetrieveFiles.getAllFiles(folderPath);
-		
-		System.out.println("List of files:");
 		
 		for(String f:fileNames)
 			System.out.println(f);
@@ -29,15 +27,6 @@ public class FolderExplorer
 		
 		//Deleting file from the given folder
 		boolean isDeleted = DeleteFile.deleteFile(folderPath, fileName);
-		
-		if(isDeleted)
-		{
-			System.out.println("File deleted successfully.");
-		}
-		else
-		{
-			System.out.println("Either the given file is not exist or some access issue.");
-		}
 	}
 
 }

@@ -8,17 +8,17 @@ public class AddFile
 {
 	/**
 	 * This method will create file in the given folder path
-	 * @param folderPath
+	 * @param folderpath
 	 * @param fileName
 	 * @param content
 	 * @return boolean
 	 */
-	public static boolean createFiles(String folderPath, String fileName, List<String> content)
+	public static boolean createFiles(String folderpath, String fileName, List<String> content)
 	{
 		try
 		{
 			//Creating file objects
-			File fl = new File(folderPath, fileName);
+			File fl = new File(folderpath, fileName);
 			FileWriter fw = new FileWriter(fl);
 			
 			//Adding content to file object line by line

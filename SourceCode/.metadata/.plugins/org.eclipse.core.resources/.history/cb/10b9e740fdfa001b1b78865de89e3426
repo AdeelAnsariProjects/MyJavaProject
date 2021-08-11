@@ -1,0 +1,21 @@
+package com.folderexplorer;
+
+import java.io.File;
+
+public class DeleteFile 
+{
+	public static boolean deleteFile(String folderPath, String fileName)
+	{
+		//Creating file objects
+		File fl = new File(folderPath+"\\"+fileName);
+		
+		try
+		{
+			
+		}
+		catch(Exception Ex)
+		{
+			
+		}
+	}
+}

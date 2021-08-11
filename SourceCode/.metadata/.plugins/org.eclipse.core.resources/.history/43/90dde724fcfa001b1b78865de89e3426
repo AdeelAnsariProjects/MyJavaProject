@@ -11,10 +11,10 @@ public class RetrieveFiles
 	 * @param folderpath
 	 * @return List<String>
 	 */
-	public static List<String> getAllFiles(String folderPath)
+	public static List<String> getAllFiles(String folderpath)
 	{
 		//Creating file objects
-		File folderName = new File(folderPath);
+		File folderName = new File(folderpath);
 		
 		//Getting all the files into FileArray
 		File[] listOfFiles = folderName.listFiles();

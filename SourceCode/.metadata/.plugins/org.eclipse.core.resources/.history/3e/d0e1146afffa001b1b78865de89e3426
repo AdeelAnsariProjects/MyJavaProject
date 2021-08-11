@@ -13,7 +13,7 @@ public class FolderExplorer
 		String fileName;
 		Scanner obj = new Scanner(System.in);
 
-		//Showing user a list files that currently exists in the given folder
+		//Showing user a list files that exist in the given folder
 		List<String> fileNames = RetrieveFiles.getAllFiles(folderPath);
 		
 		System.out.println("List of files:");
