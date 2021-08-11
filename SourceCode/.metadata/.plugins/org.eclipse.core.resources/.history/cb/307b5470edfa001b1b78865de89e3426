@@ -1,0 +1,12 @@
+package com.folderexplorer;
+
+public class FolderExplorer 
+{
+	static final String folderpath="E:\\FullStackJavaDeveloper\\MyJavaProject\\LockersFolder"; 
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
