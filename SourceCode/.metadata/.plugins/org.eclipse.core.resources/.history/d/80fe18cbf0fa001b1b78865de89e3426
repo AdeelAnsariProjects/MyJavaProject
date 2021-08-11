@@ -9,7 +9,7 @@ public class RetrieveFiles
 	/**
 	 * This method will return the name of all the files exist in the given folder path
 	 * @param folderpath
-	 * @return List<String>
+	 * @return
 	 */
 	public static List<String> getAllFiles(String folderpath)
 	{

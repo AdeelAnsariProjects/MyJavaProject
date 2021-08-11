@@ -1,0 +1,25 @@
+package com.folderexplorer;
+
+import java.util.List;
+
+public class AddFile 
+{
+	/**
+	 * This method will create file in the given folder path
+	 * @param folderpath
+	 * @param fileName
+	 * @param content
+	 * @return boolean
+	 */
+	public static boolean createFiles(String folderpath, String fileName, List<String> content)
+	{
+		try
+		{
+			
+		}
+		catch
+		{
+			
+		}
+	}
+}

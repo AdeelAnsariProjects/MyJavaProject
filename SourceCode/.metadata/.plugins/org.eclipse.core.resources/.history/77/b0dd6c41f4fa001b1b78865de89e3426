@@ -1,0 +1,35 @@
+package com.folderexplorer;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.util.List;
+
+public class AddFile 
+{
+	/**
+	 * This method will create file in the given folder path
+	 * @param folderpath
+	 * @param fileName
+	 * @param content
+	 * @return boolean
+	 */
+	public static boolean createFiles(String folderpath, String fileName, List<String> content)
+	{
+		try
+		{
+			//Creating file objects
+			File fl = new File(folderpath, fileName);
+			FileWriter fw = new FileWriter(fl);
+			
+			for(String s:content)
+			{
+				fw.write(s+"\n");
+			}
+					
+		}
+		catch(Exception Ex)
+		{
+			
+		}
+	}
+}
