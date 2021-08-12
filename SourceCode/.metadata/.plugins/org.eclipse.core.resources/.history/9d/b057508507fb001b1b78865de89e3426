@@ -1,0 +1,36 @@
+package com.folderexplorer;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class FolderExplorer 
+{
+	static final String folderPath="E:\\FullStackJavaDeveloper\\MyJavaProject\\LockersFolder"; 
+	public static void main(String[] args)
+	{
+		//Variable Declaration
+		String fileName;
+		Scanner obj = new Scanner(System.in);
+
+		//Prompting user to give file name to search
+		System.out.println("Enter the name of the file you want to search:");
+		
+		//Taking file name from user input
+		fileName=obj.nextLine();
+		
+		//Search file from in the given folder
+		boolean isExist = SearchFile.searchFile(folderPath, fileName);
+		
+		//Notifying user if the file exist or not
+		if(isExist)
+		{
+			System.out.println("The specified file exist in the folder.");
+		}
+		else
+		{
+			System.out.println("Either the specified file is not exist or some access issue.");
+		}
+	}
+
+}

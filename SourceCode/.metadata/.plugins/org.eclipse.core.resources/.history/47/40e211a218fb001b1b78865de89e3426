@@ -59,6 +59,8 @@ public class FolderExplorer
 		System.out.println("=============================================");
 		System.out.println("Enter Your Choice:");
 		ch = Integer.parseInt(obj.nextLine());
+		obj.close();
+		
 		return ch;
 	}
 
@@ -114,7 +116,7 @@ public class FolderExplorer
 		else
 		{
 			System.out.println("Some error occured. Please contact system admin.");
-		}
+		}		
 	}
 	
 	public static void deleteFile()

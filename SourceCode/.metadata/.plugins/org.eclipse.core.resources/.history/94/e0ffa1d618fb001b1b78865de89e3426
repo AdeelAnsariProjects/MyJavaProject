@@ -59,6 +59,8 @@ public class FolderExplorer
 		System.out.println("=============================================");
 		System.out.println("Enter Your Choice:");
 		ch = Integer.parseInt(obj.nextLine());
+		obj.close();
+		
 		return ch;
 	}
 

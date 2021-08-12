@@ -13,10 +13,15 @@ public class FolderExplorer
 
 		do
 		{
+			//Variable Declaration
+			Scanner obj = new Scanner(System.in);
 			int ch;
 		
 			//Application Main Menu
-			ch=displayMenu();
+			displayMenu();
+			
+			System.out.println("Enter Your Choice:");
+			ch = Integer.parseInt(obj.nextLine());
 			
 			switch(ch)
 			{
@@ -38,15 +43,12 @@ public class FolderExplorer
 				default : System.out.println("Invalid option selected.");
 						break;
 			}
+			obj.close();
 		}
 		while(proceed>0);
 	}
-	public static int displayMenu()
+	public static void displayMenu()
 	{
-		//Variable Declaration
-		Scanner obj = new Scanner(System.in);
-		int ch;
-
 		//Application Main Menu
 		System.out.println("=============================================");
 		System.out.println("|  Company Lockers Pvt. Ltd. (LockedMe.com) |");		
@@ -57,9 +59,6 @@ public class FolderExplorer
 		System.out.println("| 4. Search a file in a directory           |");
 		System.out.println("| 5. Exit                                   |");
 		System.out.println("=============================================");
-		System.out.println("Enter Your Choice:");
-		ch = Integer.parseInt(obj.nextLine());
-		return ch;
 	}
 
 	public static void getAllFiles()
@@ -114,7 +113,9 @@ public class FolderExplorer
 		else
 		{
 			System.out.println("Some error occured. Please contact system admin.");
-		}
+		}		
+		//Closing scanner object
+		obj.close();
 	}
 	
 	public static void deleteFile()

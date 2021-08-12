@@ -9,57 +9,7 @@ public class FolderExplorer
 	static final String folderPath="E:\\FullStackJavaDeveloper\\MyJavaProject\\LockersFolder"; 
 	public static void main(String[] args)
 	{
-		int proceed = 1;
-
-		do
-		{
-			int ch;
 		
-			//Application Main Menu
-			ch=displayMenu();
-			
-			switch(ch)
-			{
-				case 1 : getAllFiles();
-						break;
-				
-				case 2 : createFiles();
-						break;
-				
-				case 3 : deleteFile();
-						break;
-						
-				case 4 : searchFile();
-						break;
-						
-				case 5 : System.exit(0);
-						break;
-						
-				default : System.out.println("Invalid option selected.");
-						break;
-			}
-		}
-		while(proceed>0);
-	}
-	public static int displayMenu()
-	{
-		//Variable Declaration
-		Scanner obj = new Scanner(System.in);
-		int ch;
-
-		//Application Main Menu
-		System.out.println("=============================================");
-		System.out.println("|  Company Lockers Pvt. Ltd. (LockedMe.com) |");		
-		System.out.println("=============================================");
-		System.out.println("| 1. List all the files from a directory    |");
-		System.out.println("| 2. Add a file to a directory              |");
-		System.out.println("| 3. Delete a file from a directory         |");
-		System.out.println("| 4. Search a file in a directory           |");
-		System.out.println("| 5. Exit                                   |");
-		System.out.println("=============================================");
-		System.out.println("Enter Your Choice:");
-		ch = Integer.parseInt(obj.nextLine());
-		return ch;
 	}
 
 	public static void getAllFiles()
@@ -114,7 +64,9 @@ public class FolderExplorer
 		else
 		{
 			System.out.println("Some error occured. Please contact system admin.");
-		}
+		}		
+		//Closing scanner object
+		obj.close();
 	}
 	
 	public static void deleteFile()
