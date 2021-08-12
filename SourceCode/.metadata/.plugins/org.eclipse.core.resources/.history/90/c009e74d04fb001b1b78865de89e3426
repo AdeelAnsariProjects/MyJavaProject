@@ -14,7 +14,7 @@ public class FolderExplorer
 		Scanner obj = new Scanner(System.in);
 
 		//Prompting user to give file name to search
-		System.out.println("Enter the name of the file you want to search:");
+		System.out.println("Enter the file name you want to search:");
 		
 		//Taking file name from user input
 		fileName=obj.nextLine();
@@ -25,11 +25,11 @@ public class FolderExplorer
 		//Notifying user if the file exist or not
 		if(isExist)
 		{
-			System.out.println("The specified file exist in the folder.");
+			System.out.println("File exist in the folder.");
 		}
 		else
 		{
-			System.out.println("Either the specified file is not exist or some access issue.");
+			System.out.println("Either the given file is not exist or some access issue.");
 		}
 	}
 
